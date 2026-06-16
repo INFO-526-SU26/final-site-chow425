@@ -4,28 +4,49 @@
     "href": "proposal.html",
     "title": "Proposal title",
     "section": "",
-    "text": "library(tidyverse)"
+    "text": "# Load required packages\nlibrary(tidyverse)"
   },
   {
     "objectID": "proposal.html#dataset",
     "href": "proposal.html#dataset",
     "title": "Proposal title",
     "section": "Dataset",
-    "text": "Dataset\nA brief description of your dataset including its provenance, dimensions, etc. as well as the reason why you chose this dataset.\nMake sure to load the data and use inline code for some of this information."
+    "text": "Dataset\n\n# load the dataset\npenguins &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-04-15/penguins.csv')\npenguins_raw &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-04-15/penguins_raw.csv')\n\n\n# View the first 10 lines of the dataset\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_len bill_dep flipper_len body_mass sex     year\n  &lt;chr&gt;   &lt;chr&gt;        &lt;dbl&gt;    &lt;dbl&gt;       &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt;\n1 Adelie  Torgersen     39.1     18.7         181      3750 male    2007\n2 Adelie  Torgersen     39.5     17.4         186      3800 female  2007\n3 Adelie  Torgersen     40.3     18           195      3250 female  2007\n4 Adelie  Torgersen     NA       NA            NA        NA &lt;NA&gt;    2007\n5 Adelie  Torgersen     36.7     19.3         193      3450 female  2007\n6 Adelie  Torgersen     39.3     20.6         190      3650 male    2007\n\nhead(penguins_raw)\n\n# A tibble: 6 × 17\n  studyName `Sample Number` Species          Region Island Stage `Individual ID`\n  &lt;chr&gt;               &lt;dbl&gt; &lt;chr&gt;            &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;          \n1 PAL0708                 1 Adelie Penguin … Anvers Torge… Adul… N1A1           \n2 PAL0708                 2 Adelie Penguin … Anvers Torge… Adul… N1A2           \n3 PAL0708                 3 Adelie Penguin … Anvers Torge… Adul… N2A1           \n4 PAL0708                 4 Adelie Penguin … Anvers Torge… Adul… N2A2           \n5 PAL0708                 5 Adelie Penguin … Anvers Torge… Adul… N3A1           \n6 PAL0708                 6 Adelie Penguin … Anvers Torge… Adul… N3A2           \n# ℹ 10 more variables: `Clutch Completion` &lt;chr&gt;, `Date Egg` &lt;date&gt;,\n#   `Culmen Length (mm)` &lt;dbl&gt;, `Culmen Depth (mm)` &lt;dbl&gt;,\n#   `Flipper Length (mm)` &lt;dbl&gt;, `Body Mass (g)` &lt;dbl&gt;, Sex &lt;chr&gt;,\n#   `Delta 15 N (o/oo)` &lt;dbl&gt;, `Delta 13 C (o/oo)` &lt;dbl&gt;, Comments &lt;chr&gt;\n\n# Preview the unique penguin species in the dataset\nunique(penguins$species)\n\n[1] \"Adelie\"    \"Gentoo\"    \"Chinstrap\"\n\n# Preview the unique islands in the dataset\nunique(penguins$island)\n\n[1] \"Torgersen\" \"Biscoe\"    \"Dream\""
+  },
+  {
+    "objectID": "proposal.html#a-brief-description-of-your-dataset-including-its-provenance-dimensions-etc.-as-well-as-the-reason-why-you-chose-this-dataset.",
+    "href": "proposal.html#a-brief-description-of-your-dataset-including-its-provenance-dimensions-etc.-as-well-as-the-reason-why-you-chose-this-dataset.",
+    "title": "Proposal title",
+    "section": "A brief description of your dataset including its provenance, dimensions, etc. as well as the reason why you chose this dataset.",
+    "text": "A brief description of your dataset including its provenance, dimensions, etc. as well as the reason why you chose this dataset."
+  },
+  {
+    "objectID": "proposal.html#make-sure-to-load-the-data-and-use-inline-code-for-some-of-this-information.",
+    "href": "proposal.html#make-sure-to-load-the-data-and-use-inline-code-for-some-of-this-information.",
+    "title": "Proposal title",
+    "section": "Make sure to load the data and use inline code for some of this information.",
+    "text": "Make sure to load the data and use inline code for some of this information.\nThe Palmer Penguins dataset was first created in TidyTuesday in July 2020 and was last updated in 2025. The dataset has 8 columns/variables - Species, Island, Bill length, Bill depth, Flipper length, Body mass, Sex, and Year. There are 344 observations/rows of data on the various species of penguins. The species included in this dataset includes 3 types of penguins - Adelie, Gentoo, and Chinstrap. The dataset also focuses on 3 islands - Torgersen, Biscoe, and Dream. I chose this dataset as I love penguins and I would love to see how different factors can affect the different characteristics in penguins. It would also be interesting to see how the body mass of penguins change over the years through evolution."
   },
   {
     "objectID": "proposal.html#questions",
     "href": "proposal.html#questions",
     "title": "Proposal title",
     "section": "Questions",
-    "text": "Questions\nThe two questions you want to answer."
+    "text": "Questions\n\nHow does the island where the penguin resides impact their bill length?\nHow has the body mass of the Adelie, Gentoo, and Chinstrap penguins changed between 2007 and 2009?"
   },
   {
     "objectID": "proposal.html#analysis-plan",
     "href": "proposal.html#analysis-plan",
     "title": "Proposal title",
     "section": "Analysis plan",
-    "text": "Analysis plan\n\nA plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any)."
+    "text": "Analysis plan\n\nA plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).\n\nQuestion 1 plan\nVariables involved:\n- Island the penguin resides\n- Species of penguins\n- Bill length\nPlan:\n\nCreate side-by-side box plots to compare bill lengths of penguin species and their bill length\n\nBox plot variables:\nx-axis = Species\ny-axis = Bill length\nfill = Island\nCreate a violin plot to compare the distribution of bill lengths for each penguin species\nx-axis = Species\ny-axis = Bill length(mm)\nfill = Island\nQuestion 2 plan\nVariables involved:\n- Body mass of penguins\n- Penguin species\n- Year\nPlan:\nCreate a time series plot to compare the body mass of penguins for each species over the years\nTime series plot variables:\nx-axis = Year\ny-axis = Body mass of penguins\nfill = Penguin species"
+  },
+  {
+    "objectID": "proposal.html#weekly-project-plan-table-task-name",
+    "href": "proposal.html#weekly-project-plan-table-task-name",
+    "title": "Proposal title",
+    "section": "Weekly Project Plan Table Task Name:",
+    "text": "Weekly Project Plan Table Task Name:\n\n\n\n\n\n\n\n\n\n\nTask Name\nStatus\nDue\nPriority\nSummary\n\n\n\n\nCreate presentation\nNot completed\n28-06-2026\nLow\nCreate 7 presentation slides and create recording of the presentation\n\n\nAdd interpretation of the plot\nNot completed\n21-06-2026\nModerate\nDiscuss the results of the time series, violin, and box plots\n\n\nWrite introduction and approach\nNot completed\n21-06-2026\nModerate\nCreate introduction of the dataset and approach\n\n\nCreate time series, violin, and box plots\nNot completed\n17-06-2026\nHigh\nCreate the plots for analysis using the dataset"
   },
   {
     "objectID": "index.html",
@@ -53,7 +74,7 @@
     "href": "presentation.html#layouts",
     "title": "Project title",
     "section": "Layouts",
-    "text": "Layouts\nYou can use plain text\n\n\n\nor bullet points1\n\n\nor in two columns\n\n\n\nlike\nthis\n\nAnd add footnotes"
+    "text": "Layouts\nYou can use plain text\n\n\n\nor bullet points1\n\n\nor in two columns\n\n\nlike\nthis\n\nAnd add footnotes"
   },
   {
     "objectID": "presentation.html#code",
@@ -95,7 +116,7 @@
     "href": "presentation.html#math-expressions",
     "title": "Project title",
     "section": "Math Expressions",
-    "text": "Math Expressions\nYou can write LaTeX math expressions inside a pair of dollar signs, e.g. $\\alpha+\\beta$ renders \\(\\alpha + \\beta\\). You can use the display style with double dollar signs:\n$$\\bar{X}=\\frac{1}{n}\\sum_{i=1}^nX_i$$\n\\[\n\\bar{X}=\\frac{1}{n}\\sum_{i=1}^nX_i\n\\]\nLimitations:\n\nThe source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting $$ must appear in the very beginning of a line, followed immediately by a non-space character, and the ending $$ must be at the end of a line, led by a non-space character;\nThere should not be spaces after the opening $ or before the closing $."
+    "text": "Math Expressions\nYou can write LaTeX math expressions inside a pair of dollar signs, e.g. $\\alpha+\\beta$ renders \\(\\alpha + \\beta\\). You can use the display style with double dollar signs:\n$$\\bar{X}=\\frac{1}{n}\\sum_{i=1}^nX_i$$\n\\[\\bar{X}=\\frac{1}{n}\\sum_{i=1}^nX_i\\]\nLimitations:\n\nThe source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting $$ must appear in the very beginning of a line, followed immediately by a non-space character, and the ending $$ must be at the end of a line, led by a non-space character;\nThere should not be spaces after the opening $ or before the closing $."
   },
   {
     "objectID": "presentation.html#feeling-adventurous",
