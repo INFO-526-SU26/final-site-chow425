@@ -72,7 +72,8 @@ ggplot(penguin, aes(x = island, fill = species)) +
   labs(
     x = "Island",
     y = "No. of Penguins",
-    fill = "Penguin Species"
+    fill = "Penguin Species",
+    title = "Number of Penguins on Biscoe, Dream, and Torgersen"
   ) +
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5))
