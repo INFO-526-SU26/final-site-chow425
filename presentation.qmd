@@ -1,7 +1,7 @@
 ---
-title: "Project title"
+title: "Characteristics of Adelie, Chinstrap, and Gentoo Penguins"
 subtitle: "INFO 526 - Summer 2024 - Final Project"
-author: "Author names"
+author: "Michelle Chow"
 title-slide-attributes:
   data-background-image: images/watercolour_sys02_img34_teacup-ocean.jpg
   data-background-size: stretch

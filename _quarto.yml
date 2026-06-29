@@ -6,7 +6,7 @@ website:
   navbar:
     right:
       - icon: github
-        href: https://github.com/INFO-526-SU24/project-01 # Needs to be changed to your project repo
+        href: https://info-526-su26.github.io/final-site-chow425/ 
     left:
       - text: Project
         href: index.qmd
@@ -16,6 +16,7 @@ website:
         href: presentation.qmd
       - text: About
         href: about.qmd
+
 
 format:
   html:
