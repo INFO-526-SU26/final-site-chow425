@@ -157,7 +157,7 @@ ggplot(
       title = "Mean Body Mass of Adelie, Chinstrap, and Gentoo penguins between 2007 and 2009"
     ) +
   theme_minimal() +
-  theme(plot.title = element_text(hjust = 0.5))
+  theme(plot.title = element_text(size = 12, hjust = 0.5))
 ```
 
 The time series plot shows that out of the 3 species, Gentoo penguins have the highest mean body mass (\~5100g) while Adelie and Chinstrap penguins have similar mean body mass (\~3700g). Gentoo penguins saw an approximate 100g drop in their mean body mass in 2008 which then recovered and increased to approximately 5150g in 2009, leading to a 50g net change to their mean body mass. Adelie and Chinstrap penguins, on the other hand, had the reverse trend. These species saw an uptick in their mean body mass in 2008 before dropping again in 2009. Specifically, the Adelie saw the least changes in their body mass - Increasing by approx. 50g in 2008 before decreasing to 3650g in 2009, with a net change of \~50g. Chinstrap penguins followed a similar trend but had larger fluctuations in their mean body mass. The mean body mass increased by 100g in 2008 before decreasing by 100g in 2009 back to their original weight.
@@ -191,7 +191,7 @@ ggplot(
     color = "Island"
   ) +
   theme_minimal() +
-  theme(plot.title = element_text(size = 10, hjust = 0.5))
+  theme(plot.title = element_text(size = 12, hjust = 0.5))
 ```
 
 Based on the time series plot, there are big fluctuations in the Adelie penguin mean body mass between 2007 and 2009, especially those who reside on the Torgersen and Biscoe Islands. Specifically, on the Torgersen island, Adelie penguins saw an increase in mean body mass by of approximately 100g to 3850g in 2008. However, the mean body mass drops to less than 3500g in 2009. The dramatic decrease can be a cause for concern. On the Biscoe island, Adelie penguins saw a exact opposite trend. The mean body mass first increases a little (\~10g) in 2008 before a steep increase to 3850g in 2009. As for Dream, Adelie penguins had an moderate increase in mean body mass in 2008 (from 3675g to 3750g) before dropping back to similar original levels in 2009 (from 3750g to 3650g).
