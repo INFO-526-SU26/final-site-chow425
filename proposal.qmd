@@ -1,11 +1,11 @@
 ---
-title: "Palmer Penguins Analysis"
+title: "Characteristics of Adelie, Chinstrap, and Gentoo Penguins"
 subtitle: "Proposal"
 author: 
   - name: "Michelle Chow"
     affiliations:
       - name: "School of Information, University of Arizona"
-description: "This project analyzes the impact of islands on the bill length of Adelie, Chinstrap, and Gentoo penguins. It also compares how the body mass of these penguins change between 2007 to 2009."
+description: "Analysis of the correlation between penguin islands and bill length of Adelie, Chinstrap, and Gentoo penguins and how the body mass of the penguins change between 2007 to 2009."
 format:
   html:
     code-tools: true
@@ -28,35 +28,33 @@ library(tidyverse)
 ```{r}
 # load the dataset
 penguins <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-04-15/penguins.csv')
-penguins_raw <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-04-15/penguins_raw.csv')
 ```
 
 ```{r}
 # View the first 10 lines of the dataset
 head(penguins)
-head(penguins_raw)
 # Preview the unique penguin species in the dataset
 unique(penguins$species)
 # Preview the unique islands in the dataset
 unique(penguins$island)
+# Preview unique years in dataset
+unique(penguins$year)
 ```
 
-## Brief description of the dataset
+## Introduction to the Dataset
 
 The Palmer Penguins dataset was first created in TidyTuesday in July 2020 and was last updated in 2025. The dataset has 8 columns/variables - Species, Island, Bill length, Bill depth, Flipper length, Body mass, Sex, and Year. There are 344 observations/rows of data on the various species of penguins. The species included in this dataset includes 3 types of penguins - Adelie, Gentoo, and Chinstrap. The dataset also focuses on 3 islands - Torgersen, Biscoe, and Dream. I chose this dataset as I love penguins and I would love to see how different factors can affect the different characteristics in penguins. It would also be interesting to see how the body mass of penguins change over the years through evolution.
 
 ## Questions
 
 1.  How does the island where Adelie, Gentoo, and Chinstrap penguins reside impact their bill length?
-2.  How has the body mass of the Adelie, Gentoo, and Chinstrap penguins changed between 2007 and 2009?
+2.  How has the mean body mass of the Adelie, Gentoo, and Chinstrap penguins changed between 2007 and 2009 and does the island impact the mass?
 
 ## Analysis plan
 
-- A plan for answering each of the questions including the variables involved, variables to be created (if any), external data to be merged in (if any).
+**Question 1 Variables**
 
-**Question 1 plan**
-
-Variables involved:
+[Variables involved:]{.underline}
 
 \- Island the penguin resides (Torgersen, Biscoe, Dream)
 
@@ -66,9 +64,19 @@ Variables involved:
 
 **Plan:**
 
-1.  Create side-by-side box plots to compare bill lengths of penguin species and their bill length
+1.  Create a bar plot to show where Adelie, Gentoo, and Chinstrap penguins inhabit
 
-Box plot variables:
+[Bar plot variables:]{.underline}
+
+x-axis = Island (Torgersen, Biscoe, Dream)
+
+y-axis = Number of penguins
+
+fill = Penguin species (Adelie, Chinstrap, Gentoo)
+
+2.  Create a box plot to compare bill lengths of penguin species
+
+[Box plot variables:]{.underline}
 
 x-axis = Species of penguins (Adelie, Gentoo, Chinstrap)
 
@@ -76,7 +84,9 @@ y-axis = Bill length (mm)
 
 fill = Island (Torgersen, Biscoe, Dream)
 
-Create a violin plot to compare the distribution of bill lengths for each penguin species
+3.  Create a violin plot to compare the distribution of bill lengths for each penguin species
+
+[Violin plot variables:]{.underline}
 
 x-axis = Species of penguins (Adelie, Gentoo, Chinstrap)
 
@@ -84,11 +94,11 @@ y-axis = Bill length (mm)
 
 fill = Island (Torgersen, Biscoe, Dream)
 
-**Question 2 plan**
+**Question 2 Variables**
 
-Variables involved:
+[Variables involved:]{.underline}
 
-\- Body mass of penguins (g)
+\- Bill length length (mm)
 
 \- Penguin species (Adelie, Gentoo, Chinstrap)
 
@@ -96,21 +106,33 @@ Variables involved:
 
 **Plan:**
 
-Create a time series plot to compare the body mass of penguins for each species between 2007 and 2009
+1.  Create a time series plot to compare the body mass of Adelie, Gentoo, and Chinstrap penguins between 2007 and 2009
 
-Time series plot variables:
+[Time series plot variables:]{.underline}
 
 x-axis = Year (2007, 2008, 2009)
 
-y-axis = Body mass of penguins (g)
+y-axis = Mean body mass of penguins (g)
 
 fill = Penguin species (Adelie, Gentoo, Chinstrap)
+
+2.  Create a time series plot to compare the average body mass of Adelie penguins that lived on different islands between 2007 and 2009
+
+[Time series plot variables:]{.underline}
+
+x-axis = Year (2007, 2008, 2009)
+
+y-axis = Mean body mass of penguins (g)
+
+color = island
+
+group = island
 
 ## Weekly Project Plan Table
 
 | Task Name | Status | Due | Priority | Summary |
 |---------------|---------------|---------------|---------------|---------------|
 | Create presentation | Not completed | 28-06-2026 | Low | Create 7 presentation slides and create recording of the presentation |
-| Add interpretation of the plot | Not completed | 21-06-2026 | Moderate | Discuss the results of the time series, violin, and box plots |
-| Write introduction and approach | Not completed | 21-06-2026 | Moderate | Create introduction of the dataset and approach |
-| Create time series, violin, and box plots | Not completed | 17-06-2026 | High | Create the plots for analysis using the dataset |
+| Add interpretation of the plot | Completed | 21-06-2026 | Moderate | Discuss the results of the time series, violin, and box plots |
+| Write introduction and approach | Completed | 21-06-2026 | Moderate | Create introduction of the dataset and approach |
+| Create time series, violin, and box plots | Completed | 17-06-2026 | High | Create the plots for analysis using the dataset |
