@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: Project Title
+  title: Characteristics of Adelie, Chinstrap, and Gentoo Penguins
   navbar:
     right:
       - icon: github
