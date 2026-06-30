@@ -52,7 +52,8 @@ penguin <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/ti
 ```
 
 ## Motivation
-:::{.incremental}
+
+::: incremental
 - Fascination for penguins
 
 - Global warming impacting penguin colonies
@@ -61,6 +62,7 @@ penguin <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/ti
 :::
 
 ## Data
+
 ```{r}
 penguin |> 
   head() |>
@@ -68,9 +70,9 @@ penguin |>
   kableExtra::kable_styling(font_size = 16, full_width = FALSE) |>
   kableExtra::scroll_box(width = "100%")
 ```
-::: {style="font-size: 0.7em;"}
-:::{.incremental}
 
+:::: {style="font-size: 0.7em;"}
+::: incremental
 - Palmer Penguins dataset
 
 - First created in TidyTuesday in July 2020
@@ -87,17 +89,20 @@ penguin |>
 
 - Focus on island, species, year and body mass variables
 :::
-:::
+::::
 
 ## Questions
-:::{.incremental}
+
+::: incremental
 1.  How does the island where Adelie, Gentoo, and Chinstrap penguins reside impact their bill length?
 2.  How has the mean body mass of the Adelie, Gentoo, and Chinstrap penguins changed between 2007 and 2009 and does the island impact the mass?
 :::
 
 # Visualizations
+
 ## Visualizations - Question 1
-::::: columns
+
+::::::: columns
 ::: {.column width="50%"}
 ```{r}
 # Create a bar plot showing which islands the Gentoo, Adelie, and Chinstrap penguins inhabit
@@ -112,22 +117,23 @@ ggplot(penguin, aes(x = island, fill = species)) +
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5))
 ```
-
 :::
-::: {.column width="50%"}
-::: {style="font-size: 0.6em; text-align:center;"}
-:::{.incremental}
+
+::::: {.column width="50%"}
+:::: {style="font-size: 0.6em; text-align:center;"}
+::: incremental
 - Only Adelie penguins inhabit all islands
 - Gentoo penguins have the largest penguin population on Biscoe
 - Chinstrap penguins live on Dream
 - Adelie penguins had similar number of observations as Gentoo penguins (\~120)
 :::
-:::
-:::
+::::
 :::::
+:::::::
 
 ## Visualizations - Question 1
-::::: columns
+
+::::::: columns
 ::: {.column width="50%"}
 ```{r, echo=FALSE}
 # Create a box plot of Gentoo, Adelie, and Chinstrap penguin bill lengths
@@ -144,9 +150,10 @@ ggplot(penguin, aes(x = species, y = bill_len, fill = island)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 :::
-::: {.column width="50%"}
-::: {style="font-size: 0.7em; text-align:center;"}
-:::{.incremental}
+
+::::: {.column width="50%"}
+:::: {style="font-size: 0.7em; text-align:center;"}
+::: incremental
 - Chinstrap had the longest median bill length
 - Adelie had the shortest median bill length
 - Gentoo outlier with a bill length of 60mm
@@ -154,12 +161,13 @@ ggplot(penguin, aes(x = species, y = bill_len, fill = island)) +
   - Biscoe had the least variation
 - Chinstrap has the largest variation in bill length compared to all species
 :::
-:::
-:::
+::::
 :::::
+:::::::
 
 ## Visualizations - Question 1
-::::: columns
+
+:::::::::: columns
 ::: {.column width="50%"}
 ```{r, echo=FALSE}
 # Create a violin plot of the distribution of bill lengths for each of the penguin species
@@ -175,22 +183,24 @@ ggplot(penguin, aes(x = species, y = bill_len, fill = island)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 :::
-::: {.column width="25%"}
-::: {style="font-size: 0.5em;"}
-:::{.incremental}
+
+::::: {.column width="25%"}
+:::: {style="font-size: 0.5em;"}
+::: incremental
 All species:
 
 - Most chinstrap penguins have a bill length of 51mm
 - Moderate amount of Chinstrap penguins with a bill length of 41mm
 - Gentoo penguins have a bill length of 45mm to 50mm
-- Right-skewed
+  - Right-skewed
 - Adelie penguins have a bill length of 37mm to 41mm
 :::
-:::
-:::
-::: {.column width="25%"}
-::: {style="font-size: 0.5em;"}
-:::{.incremental}
+::::
+:::::
+
+::::: {.column width="25%"}
+:::: {style="font-size: 0.5em;"}
+::: incremental
 Specific to Adelie penguins:
 
 - Biscoe and Torgersen penguins tend to have longer bill lengths
@@ -201,12 +211,13 @@ Specific to Adelie penguins:
 
 - Dream penguins are left-skewed
 :::
-:::
-:::
+::::
 :::::
+::::::::::
 
 ## Visualizations - Question 2
-::::: columns
+
+::::::: columns
 ::: {.column width="50%"}
 ```{r, echo=FALSE}
 # Calculate the mean body mass of the Adelie, Gentoo, and Chinstrap penguin for 2007, 2008, and 2009
@@ -232,22 +243,23 @@ ggplot(
   theme(plot.title = element_text(size = 12, hjust = 0.5))
 ```
 :::
-::: {.column width="50%"}
-::: {style="font-size: 0.7em; text-align:center;"}
-:::{.incremental}
+
+::::: {.column width="50%"}
+:::: {style="font-size: 0.7em; text-align:center;"}
+::: incremental
 - Gentoo penguins have the highest mean body mass (\~5100g)
 - Adelie and Chinstrap penguins have lower mean body mass (\~3700g)
 - +50g net change to Gentoo penguins mean body mass
 - -50g net change to Adelie penguins mean body mass
 - Chinstrap penguins mean body mass remains unchanged
 :::
-:::
-:::
+::::
 :::::
+:::::::
 
 ## Visualizations - Question 2
 
-::::: columns
+::::::: columns
 ::: {.column width="50%"}
 ```{r, echo=FALSE}
 # Calculate the Adelie penguins' mean body mass between 2007 and 2009 for each of the 3 islands
@@ -279,23 +291,23 @@ ggplot(
 ```
 :::
 
-::: {.column width="50%"}
-::: {style="font-size: 0.7em; text-align:center;"}
-:::{.incremental}
+::::: {.column width="50%"}
+:::: {style="font-size: 0.7em; text-align:center;"}
+::: incremental
 - Torgersen Adelie penguins mean body mass decreased drastically (\~250g drop)
-- May be cause for concern
+  - May be cause for concern
 - Biscoe Adelie penguins mean body mass increased drastically (\~250g increase)
 - Dream Adelie penguins remains mostly unchanged
 :::
-:::
-:::
+::::
 :::::
+:::::::
 
 # Conclusion
 
 ## Conclusion - Question 1
-::: {style="font-size: 0.7em"}
 
+::: {style="font-size: 0.7em"}
 *All species*
 
 - Chinstrap penguins correlated with longer bills but have more variation in bill length
@@ -310,6 +322,7 @@ ggplot(
 :::
 
 ## Conclusion - Question 2
+
 ::: {style="font-size: 0.7em"}
 *All species*
 
@@ -333,4 +346,3 @@ ggplot(
 :::
 
 # Thank you for watching {background-image="images/chinstrap_background.webp" background-opacity="0.5"}
-
