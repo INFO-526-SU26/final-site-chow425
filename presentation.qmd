@@ -3,9 +3,9 @@ title: "Characteristics of Adelie, Chinstrap, and Gentoo Penguins"
 subtitle: "INFO 526 - Summer 2026 - Final Project"
 author: "Michelle Chow"
 title-slide-attributes:
-  data-background-image: images/watercolour_sys02_img34_teacup-ocean.jpg
+  data-background-image: images/penguin_background.webp
   data-background-size: stretch
-  data-background-opacity: "0.7"
+  data-background-opacity: "0.45"
   data-slide-number: 1
 format:
   revealjs:
@@ -52,12 +52,13 @@ penguin <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/ti
 ```
 
 ## Motivation
-
+:::{.incremental}
 - Fascination for penguins
 
 - Global warming impacting penguin colonies
 
   - Essential to track characteristics of penguins that can impact colony health
+:::
 
 ## Data
 ::: row
@@ -328,6 +329,5 @@ ggplot(
 - Torgersen penguins net decrease in mean body mass between 2007 and 2009 (3755g to less than 3500g)
 :::
 
-## Images
+# Thank you for watching {background-image="images/chinstrap_background.webp" background-opacity="0.5"}
 
-![Image credit: Danielle Navarro, Percolate.](images/watercolour_sys02_img34_teacup-ocean.png){fig-align="center" width="500"}
