@@ -88,7 +88,7 @@
     "href": "presentation.html#data",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Data",
-    "text": "Data\n\n\n\n\n\n\n\nspecies\nisland\nbill_len\nbill_dep\nflipper_len\nbody_mass\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n\n\n\n\n\n\n\n\n\nPalmer Penguins dataset\nFirst created in TidyTuesday in July 2020\n\nUpdated in 2025\n\nContains 8 columns and 344 rows of data\n\n3 species penguins\n8 different penguin characteristics\n3 islands\n\nFocus on island, species, year and body mass variables"
+    "text": "Data\n\n\n\n\n\n\nspecies\nisland\nbill_len\nbill_dep\nflipper_len\nbody_mass\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n\n\n\n\n\n\n\n\nPalmer Penguins dataset\nFirst created in TidyTuesday in July 2020\n\nUpdated in 2025\n\nContains 8 columns and 344 rows of data\n\n3 species penguins\n8 different penguin characteristics\n3 islands\n\nFocus on island, species, year and body mass variables"
   },
   {
     "objectID": "presentation.html#questions",
@@ -102,7 +102,7 @@
     "href": "presentation.html#visualizations---question-1",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Visualizations - Question 1",
-    "text": "Visualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnly Adelie penguins inhabit all islands\nGentoo penguins have the largest penguin population on Biscoe\nChinstrap penguins live on Dream\nAdelie penguins had similar number of observations as Gentoo penguins (~120)"
+    "text": "Visualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnly Adelie penguins inhabit all islands\nGentoo penguins have the largest penguin population on Biscoe\nChinstrap penguins live on Dream\nAdelie penguins had similar number of observations as Gentoo penguins (~120)"
   },
   {
     "objectID": "presentation.html#visualizations---question-1-1",
