@@ -124,15 +124,15 @@ x-axis = Year (2007, 2008, 2009)
 
 y-axis = Mean body mass of penguins (g)
 
-color = island
+color = Island (Torgersen, Biscoe, Dream)
 
-group = island
+group = Island (Torgersen, Biscoe, Dream)
 
 ## Weekly Project Plan Table
 
 | Task Name | Status | Due | Priority | Summary |
 |---------------|---------------|---------------|---------------|---------------|
-| Create presentation | Not completed | 28-06-2026 | Low | Create 7 presentation slides and create recording of the presentation |
+| Create presentation | Completed | 28-06-2026 | Low | Create 7 presentation slides and create recording of the presentation |
 | Add interpretation of the plot | Completed | 21-06-2026 | Moderate | Discuss the results of the time series, violin, and box plots |
 | Write introduction and approach | Completed | 21-06-2026 | Moderate | Create introduction of the dataset and approach |
 | Create time series, violin, and box plots | Completed | 17-06-2026 | High | Create the plots for analysis using the dataset |
