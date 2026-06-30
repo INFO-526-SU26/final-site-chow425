@@ -61,7 +61,6 @@ penguin <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/ti
 :::
 
 ## Data
-::: row
 ```{r}
 penguin |> 
   head() |>
@@ -69,7 +68,6 @@ penguin |>
   kableExtra::kable_styling(font_size = 16, full_width = FALSE) |>
   kableExtra::scroll_box(width = "100%")
 ```
-:::
 ::: {style="font-size: 0.7em;"}
 :::{.incremental}
 
@@ -98,8 +96,9 @@ penguin |>
 :::
 
 # Visualizations
-## Visualizations - Question 1 {.top}
-::: {style="text-align:center;"}
+## Visualizations - Question 1
+::::: columns
+::: {.column width="50%"}
 ```{r}
 # Create a bar plot showing which islands the Gentoo, Adelie, and Chinstrap penguins inhabit
 ggplot(penguin, aes(x = island, fill = species)) +
@@ -113,7 +112,9 @@ ggplot(penguin, aes(x = island, fill = species)) +
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5))
 ```
+
 :::
+::: {.column width="50%"}
 ::: {style="font-size: 0.6em; text-align:center;"}
 :::{.incremental}
 - Only Adelie penguins inhabit all islands
@@ -122,6 +123,8 @@ ggplot(penguin, aes(x = island, fill = species)) +
 - Adelie penguins had similar number of observations as Gentoo penguins (\~120)
 :::
 :::
+:::
+:::::
 
 ## Visualizations - Question 1
 ::::: columns

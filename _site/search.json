@@ -14,11 +14,11 @@
     "text": "Dataset\n\n# load the dataset\npenguins &lt;- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-04-15/penguins.csv')\n\n\n# View the first 10 lines of the dataset\nhead(penguins)\n\n# A tibble: 6 × 8\n  species island    bill_len bill_dep flipper_len body_mass sex     year\n  &lt;chr&gt;   &lt;chr&gt;        &lt;dbl&gt;    &lt;dbl&gt;       &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;  &lt;dbl&gt;\n1 Adelie  Torgersen     39.1     18.7         181      3750 male    2007\n2 Adelie  Torgersen     39.5     17.4         186      3800 female  2007\n3 Adelie  Torgersen     40.3     18           195      3250 female  2007\n4 Adelie  Torgersen     NA       NA            NA        NA &lt;NA&gt;    2007\n5 Adelie  Torgersen     36.7     19.3         193      3450 female  2007\n6 Adelie  Torgersen     39.3     20.6         190      3650 male    2007\n\n# Preview the unique penguin species in the dataset\nunique(penguins$species)\n\n[1] \"Adelie\"    \"Gentoo\"    \"Chinstrap\"\n\n# Preview the unique islands in the dataset\nunique(penguins$island)\n\n[1] \"Torgersen\" \"Biscoe\"    \"Dream\"    \n\n# Preview unique years in dataset\nunique(penguins$year)\n\n[1] 2007 2008 2009"
   },
   {
-    "objectID": "proposal.html#brief-description-of-the-dataset",
-    "href": "proposal.html#brief-description-of-the-dataset",
-    "title": "Palmer Penguins Analysis",
-    "section": "Brief description of the dataset",
-    "text": "Brief description of the dataset\nThe Palmer Penguins dataset was first created in TidyTuesday in July 2020 and was last updated in 2025. The dataset has 8 columns/variables - Species, Island, Bill length, Bill depth, Flipper length, Body mass, Sex, and Year. There are 344 observations/rows of data on the various species of penguins. The species included in this dataset includes 3 types of penguins - Adelie, Gentoo, and Chinstrap. The dataset also focuses on 3 islands - Torgersen, Biscoe, and Dream. I chose this dataset as I love penguins and I would love to see how different factors can affect the different characteristics in penguins. It would also be interesting to see how the body mass of penguins change over the years through evolution."
+    "objectID": "proposal.html#introduction-to-the-dataset",
+    "href": "proposal.html#introduction-to-the-dataset",
+    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
+    "section": "Introduction to the Dataset",
+    "text": "Introduction to the Dataset\nThe Palmer Penguins dataset was first created in TidyTuesday in July 2020 and was last updated in 2025. The dataset has 8 columns/variables - Species, Island, Bill length, Bill depth, Flipper length, Body mass, Sex, and Year. There are 344 observations/rows of data on the various species of penguins. The species included in this dataset includes 3 types of penguins - Adelie, Gentoo, and Chinstrap. The dataset also focuses on 3 islands - Torgersen, Biscoe, and Dream. I chose this dataset as I love penguins and I would love to see how different factors can affect the different characteristics in penguins. It would also be interesting to see how the body mass of penguins change over the years through evolution."
   },
   {
     "objectID": "proposal.html#questions",
@@ -56,83 +56,6 @@
     "text": "The project will explore the how different characteristics of penguins differ between different islands and over time. The Palmer penguin dataset, which was first created in TidyTuesday in July 2020 and most recently updated in 2025, will be used to carry out the analysis. The dataset covers 3 species of penguins - Adelie, Chinstrap, and Gentoo, with 344 observations that cover 5 different penguin characteristics - Bill length, Bill depth, Flipper length, Body Mass, and Sex between 2007 and 2009. The analysis will specifically focus on using the variables, Bill length, Body mass, Species, Island, and Year to answer two questions. The first question will explore the correlation between the bill length of Adelie, Gentoo, and Chinstrap penguins and the island in which they reside upon. The second question will then explore how the body mass of penguins have changed between 2007 and 2009."
   },
   {
-    "objectID": "presentation.html#quarto",
-    "href": "presentation.html#quarto",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Quarto",
-    "text": "Quarto\n\nThe presentation is created using the Quarto CLI\n## sets the start of a new slide"
-  },
-  {
-    "objectID": "presentation.html#layouts",
-    "href": "presentation.html#layouts",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Layouts",
-    "text": "Layouts\nYou can use plain text\n\n\n\nor bullet points1\n\n\nor in two columns\n\n\nlike\nthis\n\nAnd add footnotes"
-  },
-  {
-    "objectID": "presentation.html#code",
-    "href": "presentation.html#code",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Code",
-    "text": "Code"
-  },
-  {
-    "objectID": "presentation.html#plots",
-    "href": "presentation.html#plots",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Plots",
-    "text": "Plots"
-  },
-  {
-    "objectID": "presentation.html#plot-and-text",
-    "href": "presentation.html#plot-and-text",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Plot and text",
-    "text": "Plot and text\n\n\n\nSome text\ngoes here"
-  },
-  {
-    "objectID": "presentation.html#tables",
-    "href": "presentation.html#tables",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Tables",
-    "text": "Tables\nIf you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale"
-  },
-  {
-    "objectID": "presentation.html#images",
-    "href": "presentation.html#images",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Images",
-    "text": "Images\n\n\n\nImage credit: Danielle Navarro, Percolate."
-  },
-  {
-    "objectID": "presentation.html#math-expressions",
-    "href": "presentation.html#math-expressions",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Math Expressions",
-    "text": "Math Expressions\nYou can write LaTeX math expressions inside a pair of dollar signs, e.g. $\\alpha+\\beta$ renders \\(\\alpha + \\beta\\). You can use the display style with double dollar signs:\n$$\\bar{X}=\\frac{1}{n}\\sum_{i=1}^nX_i$$\n\\[\\bar{X}=\\frac{1}{n}\\sum_{i=1}^nX_i\\]\nLimitations:\n\nThe source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting $$ must appear in the very beginning of a line, followed immediately by a non-space character, and the ending $$ must be at the end of a line, led by a non-space character;\nThere should not be spaces after the opening $ or before the closing $."
-  },
-  {
-    "objectID": "presentation.html#feeling-adventurous",
-    "href": "presentation.html#feeling-adventurous",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Feeling adventurous?",
-    "text": "Feeling adventurous?\n\nYou are welcomed to use the default styling of the slides. In fact, that’s what I expect majority of you will do. You will differentiate yourself with the content of your presentation.\nBut some of you might want to play around with slide styling. Some solutions for this can be found at https://quarto.org/docs/presentations/revealjs."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "This project was developed by Michelle Chow For INFO 526 - Data Analysis and Visualization at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.\n\nMichelle Chow: A MSDS 1st year student."
-  },
-  {
-    "objectID": "proposal.html#introduction-to-the-dataset",
-    "href": "proposal.html#introduction-to-the-dataset",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Introduction to the Dataset",
-    "text": "Introduction to the Dataset\nThe Palmer Penguins dataset was first created in TidyTuesday in July 2020 and was last updated in 2025. The dataset has 8 columns/variables - Species, Island, Bill length, Bill depth, Flipper length, Body mass, Sex, and Year. There are 344 observations/rows of data on the various species of penguins. The species included in this dataset includes 3 types of penguins - Adelie, Gentoo, and Chinstrap. The dataset also focuses on 3 islands - Torgersen, Biscoe, and Dream. I chose this dataset as I love penguins and I would love to see how different factors can affect the different characteristics in penguins. It would also be interesting to see how the body mass of penguins change over the years through evolution."
-  },
-  {
     "objectID": "index.html#introduction",
     "href": "index.html#introduction",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
@@ -154,20 +77,6 @@
     "text": "Question 2: How has the body mass of the Adelie, Gentoo, and Chinstrap penguins changed between 2007 and 2009 and does the island impact the mass?\n\nIntroduction\nBody mass is also another critical factor to a penguins survival. It can impact a penguins chance of survival, reproduction, and thermal insulation. As a result, it is important to track the body mass of penguins to ensure there are no concerning changes in a penguin colony. Furthermore, by comparing data from previous years, a baseline can be drawn to show changes over the years. This question aims to answer whether there has been any changes to body mass for Adelie, Gentoo, and Chinstrap penguins, and if so, how and when.\n\n\nApproach\nTo answer this question, the mean body mass of Adelie, Gentoo, and Chinstrap penguins will be calculated for 2007, 2008, and 2009 and placed into the variable penguin_mean. Once the mean body mass is calculated for every year and species, a time series plot will then be created so that the mean body mass of the 3 different species can be compared.\nFollowing the time series plot, another time series plot will then be made. As the Adelie penguin is the only penguin that resides in more than 1 island, it will be used to conduct the analysis on whether the habitat area plays a role on the mean body mass of Adelie penguins. The plot will compare Adelie penguins and their mean body mass based on their habitat island between 2007 and 2009.\n\n\nAnalysis\n\n\n\n\n\n\n\n\n\nThe time series plot shows that out of the 3 species, Gentoo penguins have the highest mean body mass (~5100g) while Adelie and Chinstrap penguins have similar mean body mass (~3700g). Gentoo penguins saw an approximate 100g drop in their mean body mass in 2008 which then recovered and increased to approximately 5150g in 2009, leading to a +50g net change to their mean body mass. Adelie and Chinstrap penguins, on the other hand, had the reverse trend. These species saw an uptick in their mean body mass in 2008 before dropping again in 2009. Specifically, the Adelie saw the least changes in their body mass - Increasing by approx. 50g in 2008 before decreasing to 3650g in 2009, with a net change of approx. -50g. Chinstrap penguins followed a similar trend but had larger fluctuations in their mean body mass. The mean body mass increased by 100g in 2008 before decreasing by 100g in 2009 back to their original weight.\n\n\n\n\n\n\n\n\n\nBased on the time series plot, there are big fluctuations in the Adelie penguin mean body mass between 2007 and 2009, especially those who reside on the Torgersen and Biscoe Islands. Specifically, on the Torgersen island, Adelie penguins saw an increase in mean body mass by of approximately 100g to 3850g in 2008. However, the mean body mass drops to less than 3500g in 2009. The dramatic decrease can be a cause for concern. On the Biscoe island, Adelie penguins saw a exact opposite trend. The mean body mass first increases a little (~10g) in 2008 before a steep increase to 3850g in 2009. As for Dream, Adelie penguins had an moderate increase in mean body mass in 2008 (from 3675g to 3750g) before dropping back to similar original levels in 2009 (from 3750g to 3650g).\n\n\nConclusion\nIn conclusion, Gentoo penguins have the highest mean body mass (~5100g) of the 3 penguin species analyzed while Adelie and Chinstrap penguins had similar mean body masses (~3700g). Gentoo penguins also had a net positive change in their mean body mass between 2007 and 2009 (+50g) while Adelie and Chinstrap penguins saw a drop to their mean body mass (-50g and +0g, respectively).\nAs for Adelie penguins, specifically, Adelie penguins on Biscoe had a increase in their mean body mass between 2007 to 2009 (from 3625g to 3850g). Adelie penguins on Dream and Torgersen, on the other hand, had a decrease in their mean body mass. Those on the Torgersen Island faced the steepest drop from 3755g to less than 3500g (net decrease of 255g) while Adelie penguins living on Dream had a drop from 3675g to 3650g (net decrease of 25g). The steep drop faced by Adelie penguins may be a cause for concern, however, more data needs to be gathered to form a clearer correlation between time and mean body mass."
   },
   {
-    "objectID": "presentation.html#hello",
-    "href": "presentation.html#hello",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Hello!",
-    "text": "Hello!"
-  },
-  {
-    "objectID": "presentation.html#hello-1",
-    "href": "presentation.html#hello-1",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Hello!",
-    "text": "Hello!"
-  },
-  {
     "objectID": "presentation.html#motivation",
     "href": "presentation.html#motivation",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
@@ -179,7 +88,7 @@
     "href": "presentation.html#data",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Data",
-    "text": "Data\n\n\n\n\n\n\n\nspecies\nisland\nbill_len\nbill_dep\nflipper_len\nbody_mass\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n\n\n\n\n\n\n\n\n\nPalmer Penguins dataset\nFirst created in TidyTuesday in July 2020\n\nUpdated in 2025\n\nContains 8 columns and 344 rows of data\n\n3 species penguins\n8 different penguin characteristics\n3 islands\n\nFocus on island, species, year and body mass variables"
+    "text": "Data\n\n\n\n\n\n\nspecies\nisland\nbill_len\nbill_dep\nflipper_len\nbody_mass\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n\n\n\n\n\n\n\n\nPalmer Penguins dataset\nFirst created in TidyTuesday in July 2020\n\nUpdated in 2025\n\nContains 8 columns and 344 rows of data\n\n3 species penguins\n8 different penguin characteristics\n3 islands\n\nFocus on island, species, year and body mass variables"
   },
   {
     "objectID": "presentation.html#questions",
@@ -189,18 +98,11 @@
     "text": "Questions\n\nHow does the island where Adelie, Gentoo, and Chinstrap penguins reside impact their bill length?\nHow has the mean body mass of the Adelie, Gentoo, and Chinstrap penguins changed between 2007 and 2009 and does the island impact the mass?"
   },
   {
-    "objectID": "presentation.html#visualizations",
-    "href": "presentation.html#visualizations",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Visualizations",
-    "text": "Visualizations\nVisualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSome text\ngoes here\n\n\nVisualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSome text\ngoes here\n\n\nVisualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nSome text\ngoes here\n\n\nVisualizations - Question 2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSome text\ngoes here\n\n\nVisualizations - Question 2\n\n\n\n\n\n\n\n\n\n\n\n\n\nSome text\ngoes here"
-  },
-  {
     "objectID": "presentation.html#visualizations---question-1",
     "href": "presentation.html#visualizations---question-1",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Visualizations - Question 1",
-    "text": "Visualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnly Adelie penguins inhabit all islands\nGentoo penguins have the largest penguin population on Biscoe\nChinstrap penguins live on Dream\nAdelie penguins had similar number of observations as Gentoo penguins (~120)"
+    "text": "Visualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnly Adelie penguins inhabit all islands\nGentoo penguins have the largest penguin population on Biscoe\nChinstrap penguins live on Dream\nAdelie penguins had similar number of observations as Gentoo penguins (~120)"
   },
   {
     "objectID": "presentation.html#visualizations---question-1-1",
@@ -231,20 +133,6 @@
     "text": "Visualizations - Question 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTorgersen Adelie penguins mean body mass decreased drastically (~250g drop)\nMay be cause for concern\nBiscoe Adelie penguins mean body mass increased drastically (~250g increase)\nDream Adelie penguins remains mostly unchanged"
   },
   {
-    "objectID": "presentation.html#conclusion-1",
-    "href": "presentation.html#conclusion-1",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Conclusion",
-    "text": "Conclusion\njsadkjas"
-  },
-  {
-    "objectID": "presentation.html#conclusion",
-    "href": "presentation.html#conclusion",
-    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Conclusion",
-    "text": "Conclusion\nConclusion\njsadkjas"
-  },
-  {
     "objectID": "presentation.html#conclusion---question-1",
     "href": "presentation.html#conclusion---question-1",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
@@ -257,5 +145,12 @@
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Conclusion - Question 2",
     "text": "Conclusion - Question 2\n\nAll species\n\nGentoo penguins have the highest mean body mass (~5100g)\nAdelie and Chinstrap penguins had similar mean body mass (~3700g)\nGentoo penguin had net positive change in mean body mass\nAdelie penguin had net negative change in mean body mass\nChinstrap penguin mean body mass remains unchanged\n\nAdelie penguins\n\nBiscoe penguins net increase in mean body mass between 2007 and 2009 (3625g to 3850g)\nDream penguins net decrease in mean body mass between 2007 and 2009 (3675g to 3650g)\nTorgersen penguins net decrease in mean body mass between 2007 and 2009 (3755g to less than 3500g)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This project was developed by Michelle Chow For INFO 526 - Data Analysis and Visualization at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.\n\nMichelle Chow: A MSDS 1st year student."
   }
 ]
