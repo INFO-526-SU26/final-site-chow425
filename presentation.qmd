@@ -9,7 +9,9 @@ title-slide-attributes:
   data-slide-number: 1
 format:
   revealjs:
-    theme:  ['data/customtheming.scss']
+    theme: sky
+    center: false
+    vertical-align: top
   
 editor: visual
 execute:
@@ -58,7 +60,6 @@ penguin <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/ti
   - Essential to track characteristics of penguins that can impact colony health
 
 ## Data
-
 ::: row
 ```{r}
 penguin |> 
@@ -68,8 +69,7 @@ penguin |>
   kableExtra::scroll_box(width = "100%")
 ```
 :::
-
-::: {style="font-size: 0.5em;"}
+::: {style="font-size: 0.7em;"}
 :::{.incremental}
 
 - Palmer Penguins dataset
@@ -97,10 +97,9 @@ penguin |>
 :::
 
 # Visualizations
-## Visualizations - Question 1
-::::: columns
-::: {.column width="50%"}
-```{r, echo=FALSE}
+## Visualizations - Question 1 {.top}
+::: {style="text-align:center;"}
+```{r}
 # Create a bar plot showing which islands the Gentoo, Adelie, and Chinstrap penguins inhabit
 ggplot(penguin, aes(x = island, fill = species)) +
   geom_bar(position = "dodge") +
@@ -114,8 +113,7 @@ ggplot(penguin, aes(x = island, fill = species)) +
   theme(plot.title = element_text(hjust = 0.5))
 ```
 :::
-::: {.column width="50%"}
-::: {style="font-size: 0.5em; text-align:center;"}
+::: {style="font-size: 0.6em; text-align:center;"}
 :::{.incremental}
 - Only Adelie penguins inhabit all islands
 - Gentoo penguins have the largest penguin population on Biscoe
@@ -123,8 +121,6 @@ ggplot(penguin, aes(x = island, fill = species)) +
 - Adelie penguins had similar number of observations as Gentoo penguins (\~120)
 :::
 :::
-:::
-:::::
 
 ## Visualizations - Question 1
 ::::: columns
@@ -145,7 +141,7 @@ ggplot(penguin, aes(x = species, y = bill_len, fill = island)) +
 ```
 :::
 ::: {.column width="50%"}
-::: {style="font-size: 0.5em; text-align:center;"}
+::: {style="font-size: 0.7em; text-align:center;"}
 :::{.incremental}
 - Chinstrap had the longest median bill length
 - Adelie had the shortest median bill length
@@ -233,7 +229,7 @@ ggplot(
 ```
 :::
 ::: {.column width="50%"}
-::: {style="font-size: 0.5em; text-align:center;"}
+::: {style="font-size: 0.7em; text-align:center;"}
 :::{.incremental}
 - Gentoo penguins have the highest mean body mass (\~5100g)
 - Adelie and Chinstrap penguins have lower mean body mass (\~3700g)
@@ -280,7 +276,7 @@ ggplot(
 :::
 
 ::: {.column width="50%"}
-::: {style="font-size: 0.5em; text-align:center;"}
+::: {style="font-size: 0.7em; text-align:center;"}
 :::{.incremental}
 - Torgersen Adelie penguins mean body mass decreased drastically (\~250g drop)
 - May be cause for concern
@@ -294,7 +290,7 @@ ggplot(
 # Conclusion
 
 ## Conclusion - Question 1
-::: {style="font-size: 0.5em"}
+::: {style="font-size: 0.7em"}
 
 *All species*
 
@@ -310,7 +306,7 @@ ggplot(
 :::
 
 ## Conclusion - Question 2
-::: {style="font-size: 0.5em"}
+::: {style="font-size: 0.7em"}
 *All species*
 
 - Gentoo penguins have the highest mean body mass (\~5100g)
