@@ -4604,7 +4604,7 @@ vertical-align: -.125em;
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/INFO-526-SU26\.github\.io\/final-site-chow425\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -5015,7 +5015,7 @@ vertical-align: -.125em;
 <span id="cb11-49"><a href="#cb11-49"></a></span>
 <span id="cb11-50"><a href="#cb11-50"></a><span class="fu">## Introduction to the Dataset</span></span>
 <span id="cb11-51"><a href="#cb11-51"></a></span>
-<span id="cb11-52"><a href="#cb11-52"></a>The Palmer Penguins dataset was first created in TidyTuesday in July 2020 and was last updated in 2025. The dataset has 8 columns/variables - Species, Island, Bill length, Bill depth, Flipper length, Body mass, Sex, and Year. There are 344 observations/rows of data on the various species of penguins. The species included in this dataset includes 3 types of penguins - Adelie, Gentoo, and Chinstrap. The dataset also focuses on 3 islands - Torgersen, Biscoe, and Dream. I chose this dataset as I love penguins and I would love to see how different factors can affect the different characteristics in penguins. It would also be interesting to see how the body mass of penguins change over the years through evolution.</span>
+<span id="cb11-52"><a href="#cb11-52"></a>The Palmer Penguins dataset was first created in TidyTuesday in July 2020 and was last updated in 2025. The dataset has <span class="in">`r ncol(penguins)`</span> columns/variables - Species, Island, Bill length, Bill depth, Flipper length, Body mass, Sex, and Year. There are <span class="in">`r nrow(penguins)`</span> observations/rows of data on the various species of penguins. The species included in this dataset includes 3 types of penguins - Adelie, Gentoo, and Chinstrap. The dataset also focuses on 3 islands - Torgersen, Biscoe, and Dream. I chose this dataset as I love penguins and I would love to see how different factors can affect the different characteristics in penguins. It would also be interesting to see how the body mass of penguins change over the years through evolution.</span>
 <span id="cb11-53"><a href="#cb11-53"></a></span>
 <span id="cb11-54"><a href="#cb11-54"></a><span class="fu">## Questions</span></span>
 <span id="cb11-55"><a href="#cb11-55"></a></span>

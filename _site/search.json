@@ -80,57 +80,57 @@
     "objectID": "presentation.html#motivation",
     "href": "presentation.html#motivation",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
-    "section": "Motivation",
-    "text": "Motivation\n\nFascination for penguins\nGlobal warming impacting penguin colonies\n\nEssential to track characteristics of penguins that can impact colony health"
+    "section": "",
+    "text": "Fascination for penguins\nGlobal warming impacting penguin colonies\n\nEssential to track characteristics of penguins that can impact colony health"
   },
   {
     "objectID": "presentation.html#data",
     "href": "presentation.html#data",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Data",
-    "text": "Data\n\n\n\n\n\n\nspecies\nisland\nbill_len\nbill_dep\nflipper_len\nbody_mass\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n\n\n\n\n\n\n\n\nPalmer Penguins dataset\nFirst created in TidyTuesday in July 2020\n\nUpdated in 2025\n\nContains 8 columns and 344 rows of data\n\n3 species penguins\n8 different penguin characteristics\n3 islands\n\nFocus on island, species, year and body mass variables"
+    "text": "Data\n\n\n\n\n\n\nspecies\nisland\nbill_len\nbill_dep\nflipper_len\nbody_mass\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n\n\n\n\n\n\n\n\n\nPalmer Penguins dataset\nFirst created in TidyTuesday in July 2020\n\nUpdated in 2025\n\nContains 8 columns and 344 rows of data\n\n3 species penguins\n8 different penguin characteristics\n3 islands\n\nFocus on island, species, year and body mass variables"
   },
   {
     "objectID": "presentation.html#questions",
     "href": "presentation.html#questions",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Questions",
-    "text": "Questions\n\nHow does the island where Adelie, Gentoo, and Chinstrap penguins reside impact their bill length?\nHow has the mean body mass of the Adelie, Gentoo, and Chinstrap penguins changed between 2007 and 2009 and does the island impact the mass?"
+    "text": "Questions\n\n\nHow does the island where Adelie, Gentoo, and Chinstrap penguins reside impact their bill length?\nHow has the mean body mass of the Adelie, Gentoo, and Chinstrap penguins changed between 2007 and 2009 and does the island impact the mass?"
   },
   {
     "objectID": "presentation.html#visualizations---question-1",
     "href": "presentation.html#visualizations---question-1",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Visualizations - Question 1",
-    "text": "Visualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnly Adelie penguins inhabit all islands\nGentoo penguins have the largest penguin population on Biscoe\nChinstrap penguins live on Dream\nAdelie penguins had similar number of observations as Gentoo penguins (~120)"
+    "text": "Visualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOnly Adelie penguins inhabit all islands\nGentoo penguins have the largest penguin population on Biscoe\nChinstrap penguins live on Dream\nAdelie penguins had similar number of observations as Gentoo penguins (~120)"
   },
   {
     "objectID": "presentation.html#visualizations---question-1-1",
     "href": "presentation.html#visualizations---question-1-1",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Visualizations - Question 1",
-    "text": "Visualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChinstrap had the longest median bill length\nAdelie had the shortest median bill length\nGentoo outlier with a bill length of 60mm\nSimilar Adelie penguin bill lengths across 3 islands\n\nBiscoe had the least variation\n\nChinstrap has the largest variation in bill length compared to all species"
+    "text": "Visualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChinstrap had the longest median bill length\nAdelie had the shortest median bill length\nGentoo outlier with a bill length of 60mm\nSimilar Adelie penguin bill lengths across 3 islands\n\nBiscoe had the least variation\n\nChinstrap has the largest variation in bill length compared to all species"
   },
   {
     "objectID": "presentation.html#visualizations---question-1-2",
     "href": "presentation.html#visualizations---question-1-2",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Visualizations - Question 1",
-    "text": "Visualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\nAll species:\n\nMost chinstrap penguins have a bill length of 51mm\nModerate amount of Chinstrap penguins with a bill length of 41mm\nGentoo penguins have a bill length of 45mm to 50mm\nRight-skewed\nAdelie penguins have a bill length of 37mm to 41mm\n\n\n\n\nSpecific to Adelie penguins:\n\nBiscoe and Torgersen penguins tend to have longer bill lengths\nDistribution of Torgersen bill lengths more symmetrical\nBiscoe penguins are right-skewed\nDream penguins are left-skewed"
+    "text": "Visualizations - Question 1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAll species:\n\nMost chinstrap penguins have a bill length of 51mm\nModerate amount of Chinstrap penguins with a bill length of 41mm\nGentoo penguins have a bill length of 45mm to 50mm\n\nRight-skewed\n\nAdelie penguins have a bill length of 37mm to 41mm\n\n\n\n\n\n\nSpecific to Adelie penguins:\n\nBiscoe and Torgersen penguins tend to have longer bill lengths\nDistribution of Torgersen bill lengths more symmetrical\nBiscoe penguins are right-skewed\nDream penguins are left-skewed"
   },
   {
     "objectID": "presentation.html#visualizations---question-2",
     "href": "presentation.html#visualizations---question-2",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Visualizations - Question 2",
-    "text": "Visualizations - Question 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGentoo penguins have the highest mean body mass (~5100g)\nAdelie and Chinstrap penguins have lower mean body mass (~3700g)\n+50g net change to Gentoo penguins mean body mass\n-50g net change to Adelie penguins mean body mass\nChinstrap penguins mean body mass remains unchanged"
+    "text": "Visualizations - Question 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGentoo penguins have the highest mean body mass (~5100g)\nAdelie and Chinstrap penguins have lower mean body mass (~3700g)\n+50g net change to Gentoo penguins mean body mass\n-50g net change to Adelie penguins mean body mass\nChinstrap penguins mean body mass remains unchanged"
   },
   {
     "objectID": "presentation.html#visualizations---question-2-1",
     "href": "presentation.html#visualizations---question-2-1",
     "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
     "section": "Visualizations - Question 2",
-    "text": "Visualizations - Question 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTorgersen Adelie penguins mean body mass decreased drastically (~250g drop)\nMay be cause for concern\nBiscoe Adelie penguins mean body mass increased drastically (~250g increase)\nDream Adelie penguins remains mostly unchanged"
+    "text": "Visualizations - Question 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTorgersen Adelie penguins mean body mass decreased drastically (~250g drop)\n\nMay be cause for concern\n\nBiscoe Adelie penguins mean body mass increased drastically (~250g increase)\nDream Adelie penguins remains mostly unchanged"
   },
   {
     "objectID": "presentation.html#conclusion---question-1",
@@ -152,5 +152,12 @@
     "title": "About",
     "section": "",
     "text": "This project was developed by Michelle Chow For INFO 526 - Data Analysis and Visualization at the University of Arizona, taught by Dr. Greg Chism. The team is comprised of the following team members.\n\nMichelle Chow: A MSDS 1st year student."
+  },
+  {
+    "objectID": "presentation.html",
+    "href": "presentation.html",
+    "title": "Characteristics of Adelie, Chinstrap, and Gentoo Penguins",
+    "section": "",
+    "text": "Fascination for penguins\nGlobal warming impacting penguin colonies\n\nEssential to track characteristics of penguins that can impact colony health"
   }
 ]

@@ -202,3 +202,21 @@ Based on the time series plot, there are big fluctuations in the Adelie penguin 
 In conclusion, Gentoo penguins have the highest mean body mass (\~5100g) of the 3 penguin species analyzed while Adelie and Chinstrap penguins had similar mean body masses (\~3700g). Gentoo penguins also had a net positive change in their mean body mass between 2007 and 2009 (+50g) while Adelie and Chinstrap penguins saw a drop to their mean body mass (-50g and +0g, respectively).
 
 As for Adelie penguins, specifically, Adelie penguins on Biscoe had a increase in their mean body mass between 2007 to 2009 (from 3625g to 3850g). Adelie penguins on Dream and Torgersen, on the other hand, had a decrease in their mean body mass. Those on the Torgersen Island faced the steepest drop from 3755g to less than 3500g (net decrease of 255g) while Adelie penguins living on Dream had a drop from 3675g to 3650g (net decrease of 25g). The steep drop faced by Adelie penguins may be a cause for concern, however, more data needs to be gathered to form a clearer correlation between time and mean body mass.
+
+## **References**
+
+<https://quarto.org/docs/presentations/revealjs/themes.html>
+
+Used for reveal themes
+
+<https://royalsocietypublishing.org/rsos/article/2/1/140390/1044/Carry-over-body-mass-effect-from-winter-to?__cf_chl_f_tk=Wm4yityQyutdjKZVNJoLTYZzxWyHKmR5SxwWYtwsbDo-1782812339-1.0.1.1-95eLuBjK58.nvLwXVOh93daAtzWHpF.E3J5F7k2VnJQ>
+
+<https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0128776>
+
+Used for impact of body mass in penguins
+
+<https://seaworld.org/animals/all-about/penguin/physical-characteristics/>
+
+<https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3443>
+
+Used for bill length importance in penguins

@@ -43,7 +43,7 @@ unique(penguins$year)
 
 ## Introduction to the Dataset
 
-The Palmer Penguins dataset was first created in TidyTuesday in July 2020 and was last updated in 2025. The dataset has 8 columns/variables - Species, Island, Bill length, Bill depth, Flipper length, Body mass, Sex, and Year. There are 344 observations/rows of data on the various species of penguins. The species included in this dataset includes 3 types of penguins - Adelie, Gentoo, and Chinstrap. The dataset also focuses on 3 islands - Torgersen, Biscoe, and Dream. I chose this dataset as I love penguins and I would love to see how different factors can affect the different characteristics in penguins. It would also be interesting to see how the body mass of penguins change over the years through evolution.
+The Palmer Penguins dataset was first created in TidyTuesday in July 2020 and was last updated in 2025. The dataset has `r ncol(penguins)` columns/variables - Species, Island, Bill length, Bill depth, Flipper length, Body mass, Sex, and Year. There are `r nrow(penguins)` observations/rows of data on the various species of penguins. The species included in this dataset includes 3 types of penguins - Adelie, Gentoo, and Chinstrap. The dataset also focuses on 3 islands - Torgersen, Biscoe, and Dream. I chose this dataset as I love penguins and I would love to see how different factors can affect the different characteristics in penguins. It would also be interesting to see how the body mass of penguins change over the years through evolution.
 
 ## Questions
 
