@@ -16,6 +16,7 @@ editor: visual
 code-annotations: hover
 execute:
   warning: false
+  echo: false
 ---
 
 ```{r}
@@ -30,14 +31,27 @@ library(tidyverse)
 penguin <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2025/2025-04-15/penguins.csv')
 ```
 
+View the first 10 lines of the dataset
 ```{r}
 # View the first 10 lines of the dataset
 head(penguins)
+```
+
+View the unique penguin species in the dataset
+```{r}
 # Preview the unique penguin species in the dataset
 unique(penguins$species)
+```
+
+View the unique islands in the dataset
+```{r}
 # Preview the unique islands in the dataset
 unique(penguins$island)
-# Preview unique years in dataset
+```
+
+View the unique years in the dataset
+```{r}
+# Preview unique years in the dataset
 unique(penguins$year)
 ```
 

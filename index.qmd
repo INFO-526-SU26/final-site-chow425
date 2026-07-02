@@ -185,20 +185,14 @@ In conclusion, Gentoo penguins have the highest mean body mass (\~5100g) of the 
 
 As for Adelie penguins, specifically, Adelie penguins on Biscoe had a increase in their mean body mass between 2007 to 2009 (from 3625g to 3850g). Adelie penguins on Dream and Torgersen, on the other hand, had a decrease in their mean body mass. Those on the Torgersen Island faced the steepest drop from 3755g to less than 3500g (net decrease of 255g) while Adelie penguins living on Dream had a drop from 3675g to 3650g (net decrease of 25g). The steep drop faced by Adelie penguins may be a cause for concern, however, more data needs to be gathered to form a clearer correlation between time and mean body mass.
 
-## **References**
+## References
 
-<https://quarto.org/docs/presentations/revealjs/themes.html>
+Cappello, C. D., & Boersma, P. D. (2021, June 18). *Consequences of phenological shifts and a compressed breeding period in Magellanic penguins*. esa. https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3443
 
-Used for reveal themes
+Dehnhard, N., Eens, M., Demongin, L., Quillfeldt, P., & Poisbleau, M. (2015, June 1). *Individual consistency and phenotypic plasticity in rockhopper penguins: Female but not male body mass links environmental conditions to reproductive investment*. PLOS One. https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0128776
 
-<https://royalsocietypublishing.org/rsos/article/2/1/140390/1044/Carry-over-body-mass-effect-from-winter-to?__cf_chl_f_tk=Wm4yityQyutdjKZVNJoLTYZzxWyHKmR5SxwWYtwsbDo-1782812339-1.0.1.1-95eLuBjK58.nvLwXVOh93daAtzWHpF.E3J5F7k2VnJQ>
+Quarto. (2026). *Reveal Themes* . Reveal Themes - Quarto. https://quarto.org/docs/presentations/revealjs/themes.html
 
-<https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0128776>
+Salton, M., Saraux, C., Dann, P., & Chiaradia, A. (2015, January 1). *Carry-over body mass effect from winter to breeding in a resident seabird, the little Penguin*. The Royal Society Publishing. https://royalsocietypublishing.org/rsos/article/2/1/140390/1044/Carry-over-body-mass-effect-from-winter-to
 
-Used for impact of body mass in penguins
-
-<https://seaworld.org/animals/all-about/penguin/physical-characteristics/>
-
-<https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecy.3443>
-
-Used for bill length importance in penguins
+United Parks & Resorts. (2026). *Physical Characteristics*. All About Penguins - Physical Characteristics. https://seaworld.org/animals/all-about/penguin/physical-characteristics/
