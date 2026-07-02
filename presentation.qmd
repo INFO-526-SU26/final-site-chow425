@@ -79,13 +79,13 @@ penguin |>
 
   - Updated in 2025
 
-- Contains 8 columns and 344 rows of data
+- Contains `r ncol(penguin)` columns and `r nrow(penguin)` rows of data
 
-  - 3 species penguins
+  - `r dplyr::n_distinct(penguin$species)` species penguins
 
-  - 8 different penguin characteristics
+  - `r ncol(penguin)` different penguin characteristics
 
-  - 3 islands
+  - `r dplyr::n_distinct(penguin$island)` islands
 
 - Focus on island, species, year and body mass variables
 :::
@@ -99,37 +99,6 @@ penguin |>
 :::
 
 # Visualizations
-
-## Visualizations - Question 1
-
-::::::: columns
-::: {.column width="50%"}
-```{r}
-# Create a bar plot showing which islands the Gentoo, Adelie, and Chinstrap penguins inhabit
-ggplot(penguin, aes(x = island, fill = species)) +
-  geom_bar(position = "dodge") +
-  labs(
-    x = "Island",
-    y = "No. of Penguins",
-    fill = "Penguin Species",
-    title = "Number of Penguins on Biscoe, Dream, and Torgersen"
-  ) +
-  theme_minimal() +
-  theme(plot.title = element_text(hjust = 0.5))
-```
-:::
-
-::::: {.column width="50%"}
-:::: {style="font-size: 0.6em; text-align:center;"}
-::: incremental
-- Only Adelie penguins inhabit all islands
-- Gentoo penguins have the largest penguin population on Biscoe
-- Chinstrap penguins live on Dream
-- Adelie penguins had similar number of observations as Gentoo penguins (\~120)
-:::
-::::
-:::::
-:::::::
 
 ## Visualizations - Question 1
 

@@ -57,29 +57,11 @@ The bill of penguins is critical to their survival. Penguins utilize their beaks
 
 ### Approach
 
-To answer this question, a bar chart will be created to first understand which islands each penguin resides. This plot will show the number of Adelie, Chinstrap, and Gentoo penguins on each island. We can then use this data to determine which species can be used to compare the impact of islands on bill length.
-
-Then, a box plot will be created using the `bill_len`, `species`, and `island` variable to compare the median and spread of bill lengths of Adelie, Chinstrap, and Gentoo penguins. The box plot will also provide insight into how the median and spread of bill lengths differ between islands for each species. From this, we can deduce which species of penguins usually have longer or shorter bills and whether their habitat plays a role on the length of the bill.
+To answer this question, a box plot will be created using the `bill_len`, `species`, and `island` variable to compare the median and spread of bill lengths of Adelie, Chinstrap, and Gentoo penguins. The box plot will also provide insight into how the median and spread of bill lengths differ between islands for each species. From this, we can deduce which species of penguins usually have longer or shorter bills and whether their habitat plays a role on the length of the bill.
 
 Next, a violin plot will be created to better look at the distribution of bill lengths for each species and how they differ across islands. The plot will also be able to show if bill lengths are concentrated at a certain length to show whether the data is skewed.
 
 ### Analysis
-
-```{r}
-# Create a bar plot showing which islands the Gentoo, Adelie, and Chinstrap penguins inhabit
-ggplot(penguin, aes(x = island, fill = species)) +
-  geom_bar(position = "dodge") +
-  labs(
-    x = "Island",
-    y = "No. of Penguins",
-    fill = "Penguin Species",
-    title = "Number of Penguins on Biscoe, Dream, and Torgersen"
-  ) +
-  theme_minimal() +
-  theme(plot.title = element_text(hjust = 0.5))
-```
-
-The bar chart showed that, although the dataset contained 3 different islands, only Adelie penguins inhabited all 3 islands. Gentoo penguins were concentrated on Biscoe, while Chinstrap penguins resided on Dream. Therefore, based on this graph, we can only compare the impact of the island of habitation on bill length for Adelie penguins. This chart also shows that Adelie and Gentoo penguins both had similar number of observations (\~120 observations) while there were only approximately 60 observations for Chinstrap penguins. Based on this graph we can then use a box plot to analyze the difference in bill length between Adelie, Chinstrap, and Gentoo penguins and how living on a different island impacts an Adelie's bill length.
 
 ```{r}
 # Create a box plot of Gentoo, Adelie, and Chinstrap penguin bill lengths
